@@ -1257,12 +1257,12 @@ import os
 import re
 
 import requests
-bot = Client(
-    "CW",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
-)
+#bot = Client(
+#    "CW",
+#    bot_token=os.environ.get("BOT_TOKEN"),
+#    api_id=int(os.environ.get("API_ID")),
+#    api_hash=os.environ.get("API_HASH")
+#) 
 
 logger = logging.getLogger()
 # thumb = os.environ.get("THUMB")
@@ -1272,12 +1272,12 @@ logger = logging.getLogger()
 
 
 
-@bot.on_message(filters.command(["captain"]))
+@bot.on_message(filters.command(["crwl"]))
 async def start(bot, update):
       await update.reply_text("Hi i am **Careerwill Downloader**.\n\n"
                                "**NOW:-** "
                                
-                                      "Press **/bot** to continue..\n\n")
+                                      "Press **/cw** to continue..\n\n")
                              
 
 ACCOUNT_ID = "6206459123001"
